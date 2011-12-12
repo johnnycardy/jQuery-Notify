@@ -1,0 +1,5 @@
+Notify v0.1 plugin for jQuery.
+ 
+Displays HTML5 Desktop Notifications in supported browsers, and animated 'toast' notifications in other browsers.
+
+Take a look at the test.html for examples of usage.

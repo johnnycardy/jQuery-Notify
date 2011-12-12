@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<link rel="stylesheet" type="text/css" href="notify.css" />
+		<script src='jquery-1.3.2.min.js'></script>
+		<script src='jquery.notify.js'></script>
+		<script>
+			$(function(){
+				$('#test1').click(function(){
+					$.notify({
+						title: 'this is the title',
+						message: 'this is the <a href="#">message</a>',
+						/*url: 'http://localhost/notify/index.html',*/
+						/*icon: 'http://aux.iconpedia.net/uploads/2060894592371679265.png',*/
+						timeout: 1000,
+						useFallback: true,
+						onClose: function(){ console.log('closed'); },
+						onClick: function(){ console.log('click'); },
+						closeOnClick: true
+					});
+				});
+			});
+		</script>
+		<title>Notify test page</title>
+	</head>
+	<body>
+		<button id='test1'>Simple</button>
+		<button id='test1'>Simple with timer</button>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
